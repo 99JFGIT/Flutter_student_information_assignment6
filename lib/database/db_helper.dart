@@ -53,7 +53,7 @@ class DatabaseHelper {
             $columnStudentId TEXT NOT NULL,
             $columnPhone TEXT NOT NULL,
             $columnEmail TEXT NOT NULL,
-            $columnLocation TEXT NOT NULL,
+            $columnLocation TEXT NOT NULL
           )
           """);
 
