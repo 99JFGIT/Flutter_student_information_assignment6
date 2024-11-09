@@ -19,7 +19,7 @@ class _FirstPageState extends State<FirstPage> {
         title: Text(
           'IIUC STUDENT INFORMATION MEDIA',
           style: TextStyle(color: Colors.greenAccent.shade200
-              ,fontSize: 20,fontWeight: FontWeight.bold,
+              ,fontSize: 18,fontWeight: FontWeight.bold,
           ),
 
         ),

@@ -1,8 +1,8 @@
 //model class
 class Note {
   int? id;
-  String? studentname;
-  String? studentid;
+  String? student_name;
+  String? student_id;
   String? phone;
   String? email;
   String? location;
@@ -10,8 +10,8 @@ class Note {
   //constructor
   Note({
     this.id,
-    this.studentname,
-    this.studentid,
+    this.student_name,
+    this.student_id,
     this.phone,
     this.email,
     this.location,
@@ -22,8 +22,8 @@ class Note {
   //name must be same as table name in db
   Map<String, dynamic> toMap() {
     return {
-      'student_name': studentname,
-      'student_id': studentid,
+      'student_name': student_name,
+      'student_id': student_id,
       'phone': phone,
       'email': email,
       'location': location,
@@ -34,8 +34,8 @@ class Note {
   static Note fromMap(Map<String, dynamic> map) {
     return Note(
       id: map['id'],
-      studentname: map['student_name'],
-      studentid: map['student_id'],
+      student_name: map['student_name'],
+      student_id: map['student_id'],
       phone: map['phone'],
       email: map['email'],
       location: map['location'],

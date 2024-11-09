@@ -18,8 +18,8 @@ class _UpdateNotesState extends State<UpdateNotes> {
 
   late DatabaseHelper dbHelper;
 
-  var studentnameController=TextEditingController();
-  var studentidController=TextEditingController();
+  var student_nameController=TextEditingController();
+  var student_idController=TextEditingController();
   var phoneController=TextEditingController();
   var emailController=TextEditingController();
   var locationController=TextEditingController();
@@ -34,8 +34,8 @@ class _UpdateNotesState extends State<UpdateNotes> {
   Future  updateNotes(int id) async
   {
     final updatedNote = Note(
-      studentname: studentnameController.text,
-      studentid: studentidController.text,
+      student_name: student_nameController.text,
+      student_id: student_idController.text,
       phone: phoneController.text,
       email: emailController.text,
       location: locationController.text,
@@ -64,8 +64,8 @@ class _UpdateNotesState extends State<UpdateNotes> {
     // TODO: implement initState
     super.initState();
     dbHelper = DatabaseHelper.instance;
-    studentnameController.text=widget.notes.studenname;
-    studentidController.text=widget.notes.studentid;
+    student_nameController.text=widget.notes.student_name;
+    student_idController.text=widget.notes.student_id;
     phoneController.text=widget.notes.phone;
     emailController.text=widget.notes.email;
     locationController.text=widget.notes.location;
@@ -97,7 +97,7 @@ class _UpdateNotesState extends State<UpdateNotes> {
 
               SizedBox(height: 10,),
               TextFormField(
-                controller: studentnameController,
+                controller: student_nameController,
                 maxLines: 3,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
@@ -124,7 +124,7 @@ class _UpdateNotesState extends State<UpdateNotes> {
 
               SizedBox(height: 10,),
               TextFormField(
-                controller: studentidController,
+                controller: student_idController,
                 maxLines: 3,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(

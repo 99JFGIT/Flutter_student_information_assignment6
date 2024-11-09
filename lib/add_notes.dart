@@ -17,8 +17,8 @@ class _AddNotesState extends State<AddNotes> {
 
   late DatabaseHelper dbHelper;
 
-  var studentnameController=TextEditingController();
-  var studentidController=TextEditingController();
+  var student_nameController=TextEditingController();
+  var student_idController=TextEditingController();
   var phoneController=TextEditingController();
   var emailController=TextEditingController();
   var locationController=TextEditingController();
@@ -29,8 +29,8 @@ class _AddNotesState extends State<AddNotes> {
   Future addNotes() async
   {
     final newNote = Note(
-      studentname: studentnameController.text,
-      studentid: studentidController.text,
+      student_name: student_nameController.text,
+      student_id: student_idController.text,
       phone: phoneController.text,
       email: emailController.text,
       location: locationController.text,
@@ -85,7 +85,7 @@ class _AddNotesState extends State<AddNotes> {
             children: [
 
               TextFormField(
-                controller: studentnameController,
+                controller: student_nameController,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   labelText: "Student Name",
@@ -111,7 +111,7 @@ class _AddNotesState extends State<AddNotes> {
 
               SizedBox(height: 10,),
               TextFormField(
-                controller: studentidController,
+                controller: student_idController,
                 maxLines: 3,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(

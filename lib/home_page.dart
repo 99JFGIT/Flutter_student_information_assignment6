@@ -96,10 +96,10 @@ class _HomePageState extends State<HomePage> {
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> UpdateNotes(notes: note)));
               },  // for clickable list item
-              title: Text(note.studentname!,style: TextStyle(
+              title: Text(note.student_name!,style: TextStyle(
                   fontWeight: FontWeight.bold
               ),),
-              subtitle: Text(note.studentid!),
+              subtitle: Text(note.student_id!),
               leading: const Icon(
                 Icons.onetwothree,color: Colors.greenAccent,
                 size: 40,
